@@ -67,7 +67,6 @@ Follow these steps to set up the environment and install the necessary dependenc
 ## Project Structure
 
     ```kotlin
-    .
     ├── Vehicle_Detection_Image_Dataset
     │   ├── train
     │   │   ├── images
