@@ -153,21 +153,22 @@ Follow these steps to set up the environment and install the necessary dependenc
 ### Sample Image Detection
 
 ![Sample Image Detection 1](https://drive.google.com/uc?export=view&id=1J00wkqRBX7CsOqvMmHVCV3qU268tYmFr)
-![Sample Image Detection 2](https://drive.google.com/file/d/1JTP-ew8s-nYkWckVlZIcND9nCTWdeg88/view?usp=sharing.png)
+![Sample Image Detection 2](https://drive.google.com/uc?export=view&id=1JTP-ew8s-nYkWckVlZIcND9nCTWdeg88)
+
 
 ### Learning Curves
 
-![Learning Curves 1](https://drive.google.com/file/d/1ayQMoxul3wU46S0NWJRLdXyyCK3iyt6M/view?usp=sharing)
-![Learning Curves 2](https://drive.google.com/file/d/1PF9OuE6Uhk4ukLLMOqRqZxPaw4LdcWF-/view?usp=sharing)
-![Learning Curves 3](https://drive.google.com/file/d/1rE5bC82NFI6ISQ9WmEMmjDNSRMS6LZtR/view?usp=sharing)
+![Learning Curves 1](https://drive.google.com/uc?export=view&id=1PF9OuE6Uhk4ukLLMOqRqZxPaw4LdcWF-)
+![Learning Curves 2](https://drive.google.com/uc?export=view&id=1ayQMoxul3wU46S0NWJRLdXyyCK3iyt6M)
+![Learning Curves 3](https://drive.google.com/uc?export=view&id=1rE5bC82NFI6ISQ9WmEMmjDNSRMS6LZtR)
 
 ### Confusion Matrix
 
-![Confusion Matrix](https://drive.google.com/file/d/1UHNCRJ6MCBnCUqxDbNxKJ_Rzklu6NdQj/view?usp=sharing)
+![Confusion Matrix](https://drive.google.com/uc?export=view&id=1UHNCRJ6MCBnCUqxDbNxKJ_Rzklu6NdQj)
 
 ### Traffic Density Analysis
 
-![Traffic Density Analysis](https://drive.google.com/file/d/1qgbOkvyVfN8M8jRiwfoEl3DuM5xAsWd_/view?usp=sharing)
+![Traffic Density Analysis](https://drive.google.com/uc?export=view&id=1qgbOkvyVfN8M8jRiwfoEl3DuM5xAsWd_)
 
 ## Contributing
 
