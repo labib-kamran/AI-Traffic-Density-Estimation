@@ -152,7 +152,8 @@ Follow these steps to set up the environment and install the necessary dependenc
 
 ### Sample Image Detection
 
-![Sample Image Detection 1](https://drive.google.com/file/d/1J00wkqRBX7CsOqvMmHVCV3qU268tYmFr/view?usp=sharing.png)
+![Sample Image Detection 1]([https://drive.google.com/file/d/1J00wkqRBX7CsOqvMmHVCV3qU268tYmFr/view?usp=sharing.png](https://drive.google.com/uc?export=view&id=1J00wkqRBX7CsOqvMmHVCV3qU268tYmFr
+))
 ![Sample Image Detection 2](https://drive.google.com/file/d/1JTP-ew8s-nYkWckVlZIcND9nCTWdeg88/view?usp=sharing.png)
 
 ### Learning Curves
