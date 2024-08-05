@@ -1,4 +1,11 @@
-﻿# Vehicle Detection and Traffic Analysis using YOLOv8
+
+# Vehicle Detection and Traffic Analysis using YOLOv8
+
+This repository contains code for vehicle detection and traffic density analysis using the YOLOv8 object detection model. The project involves fine-tuning a pre-trained YOLOv8 model on a custom vehicle detection dataset, performing object detection, and analyzing traffic density from video footage.
+
+
+
+# Vehicle Detection and Traffic Analysis using YOLOv8
 
 This repository contains code for vehicle detection and traffic density analysis using the YOLOv8 object detection model. The project involves fine-tuning a pre-trained YOLOv8 model on a custom vehicle detection dataset, performing object detection, and analyzing traffic density from video footage.
 
@@ -18,134 +25,154 @@ Follow these steps to set up the environment and install the necessary dependenc
 
 1. **Clone the repository**
 
-   ```sh
-   git clone https://github.com/labib-kamran/AI-Traffic-Density-Estimation.git
-   cd vehicle-detection-yolov8
-Create a virtual environment
+    ```sh
+    git clone https://github.com/labib-kamran/AI-Traffic-Density-Estimation.git
+    cd vehicle-detection-yolov8
+    ```
 
-sh
-Copy code
-python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-Install the required libraries
+2. **Create a virtual environment**
 
-sh
-Copy code
-pip install -r requirements.txt
-Dataset
-Download the dataset from the provided link and place it in the ./Vehicle_Detection_Image_Dataset directory.
+    ```sh
+    python -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    ```
 
-https://drive.google.com/file/d/1FkfG8fntezgUaSphCVbE1Keh60ycre41/view?pli=1
+3. **Install the required libraries**
 
-Ensure your dataset directory structure looks like this:
+    ```sh
+    pip install -r requirements.txt
+    ```
 
-kotlin
-Copy code
-./Vehicle_Detection_Image_Dataset
-├── train
-│   ├── images
-│   └── labels
-├── valid
-│   ├── images
-│   └── labels
-└── data.yaml
-Project Structure
-kotlin
-Copy code
-.
-├── Vehicle_Detection_Image_Dataset
-│   ├── train
-│   │   ├── images
-│   │   └── labels
-│   ├── valid
-│   │   ├── images
-│   │   └── labels
-│   └── data.yaml
-├── traffic_density_analysis.mp4
-├── processed_sample_video.mp4
-├── requirements.txt
-├── README.md
-└── vehicle_detection_notebook.ipynb
-Usage
-Running the Jupyter Notebook
-Start Jupyter Notebook
+## Dataset
 
-sh
-Copy code
-jupyter notebook
-Open the vehicle_detection_notebook.ipynb file and run the cells step by step.
+1. **Link to dataset**
 
-Fine-Tuning YOLOv8
-Load Pre-trained Model
+    [Download Dataset](https://drive.google.com/file/d/1FkfG8fntezgUaSphCVbE1Keh60ycre41/view?pli=1)
 
-Load a pre-trained YOLOv8 model from Ultralytics.
+2. **Download the dataset from the provided link and place it in the `./Vehicle_Detection_Image_Dataset` directory.**
 
-python
-Copy code
-model = YOLO('yolov8n.pt')
-Data Exploration
+3. **Ensure your dataset directory structure looks like this:**
 
-Load and explore the dataset.
+    ```kotlin
+    ./Vehicle_Detection_Image_Dataset
+    ├── train
+    │   ├── images
+    │   └── labels
+    ├── valid
+    │   ├── images
+    │   └── labels
+    └── data.yaml
+    ```
 
-Training the Model
+## Project Structure
 
-Fine-tune the YOLOv8 model on the custom dataset.
+    ```kotlin
+    .
+    ├── Vehicle_Detection_Image_Dataset
+    │   ├── train
+    │   │   ├── images
+    │   │   └── labels
+    │   ├── valid
+    │   │   ├── images
+    │   │   └── labels
+    │   └── data.yaml
+    ├── traffic_density_analysis.mp4
+    ├── processed_sample_video.mp4
+    ├── requirements.txt
+    ├── README.md
+    └── vehicle_detection_notebook.ipynb
+    ```
 
-python
-Copy code
-results = model.train(
-    data='path/to/data.yaml',
-    epochs=100,
-    imgsz=640,
-    batch=32,
-    optimizer='auto',
-    lr0=0.0001,
-    lrf=0.1,
-    dropout=0.1,
-    patience=50,
-    seed=0
-)
-Saving the Model
+## Usage
 
-Save the trained model.
+### Running the Jupyter Notebook
 
-python
-Copy code
-model.save("trained_model_yolov8n.pt")
-Traffic Density Analysis
-Perform Inference on Videos
+1. **Start Jupyter Notebook**
 
-Perform inference on a sample video and save the output.
+    ```sh
+    jupyter notebook
+    ```
 
-python
-Copy code
-best_model.predict(source='sample_video.mp4', save=True)
-Analyze Traffic Density
+2. **Open the `vehicle_detection_notebook.ipynb` file and run the cells step by step.**
 
-Analyze traffic density by counting vehicles in defined regions of interest within the video frames.
+### Fine-Tuning YOLOv8
 
-Results
-Sample Image Detection
+1. **Load Pre-trained Model**
 
+    ```python
+    model = YOLO('yolov8n.pt')
+    ```
 
+2. **Data Exploration**
 
+    Load and explore the dataset.
 
-Learning Curves
+3. **Training the Model**
 
+    Fine-tune the YOLOv8 model on the custom dataset.
 
+    ```python
+    results = model.train(
+        data='path/to/data.yaml',
+        epochs=100,
+        imgsz=640,
+        batch=32,
+        optimizer='auto',
+        lr0=0.0001,
+        lrf=0.1,
+        dropout=0.1,
+        patience=50,
+        seed=0
+    )
+    ```
 
+4. **Saving the Model**
 
-Confusion Matrix
+    Save the trained model.
 
+    ```python
+    model.save("trained_model_yolov8n.pt")
+    ```
 
+### Traffic Density Analysis
 
-Traffic Density Analysis
+1. **Perform Inference on Videos**
 
+    Perform inference on a sample video and save the output.
 
+    ```python
+    best_model.predict(source='sample_video.mp4', save=True)
+    ```
 
-Contributing
+2. **Analyze Traffic Density**
+
+    Analyze traffic density by counting vehicles in defined regions of interest within the video frames.
+
+## Results
+
+### Sample Image Detection
+
+![Sample Image Detection 1](https://drive.google.com/file/d/1J00wkqRBX7CsOqvMmHVCV3qU268tYmFr/view?usp=sharing)
+![Sample Image Detection 2](https://drive.google.com/file/d/1JTP-ew8s-nYkWckVlZIcND9nCTWdeg88/view?usp=sharing)
+
+### Learning Curves
+
+![Learning Curves 1](https://drive.google.com/file/d/1ayQMoxul3wU46S0NWJRLdXyyCK3iyt6M/view?usp=sharing)
+![Learning Curves 2](https://drive.google.com/file/d/1PF9OuE6Uhk4ukLLMOqRqZxPaw4LdcWF-/view?usp=sharing)
+![Learning Curves 3](https://drive.google.com/file/d/1rE5bC82NFI6ISQ9WmEMmjDNSRMS6LZtR/view?usp=sharing)
+
+### Confusion Matrix
+
+![Confusion Matrix](https://drive.google.com/file/d/1UHNCRJ6MCBnCUqxDbNxKJ_Rzklu6NdQj/view?usp=sharing)
+
+### Traffic Density Analysis
+
+![Traffic Density Analysis](https://drive.google.com/file/d/1qgbOkvyVfN8M8jRiwfoEl3DuM5xAsWd_/view?usp=sharing)
+
+## Contributing
+
 Contributions are welcome! Please open an issue or submit a pull request for any improvements.
 
-License
-This project is licensed under the MIT License.
+## License
 
+This project is licensed under the MIT License.
