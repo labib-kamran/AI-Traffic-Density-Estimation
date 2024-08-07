@@ -47,7 +47,7 @@ Follow these steps to set up the environment and install the necessary dependenc
 
 1. **Link to dataset**
 
-    [Download Dataset](https://drive.google.com/file/d/1FkfG8fntezgUaSphCVbE1Keh60ycre41/view?pli=1)
+    [Download Dataset](https://drive.google.com/file/d/1RbTX5Jmd-WdmEbPdoUjEtpvv4ljsHfC1/view?usp=sharing)
 
 2. **Download the dataset from the provided link and place it in the `./Vehicle_Detection_Image_Dataset` directory.**
 
@@ -152,7 +152,7 @@ Follow these steps to set up the environment and install the necessary dependenc
 ### Sample Image Detection
 
 ![Sample Image Detection 1](https://drive.google.com/uc?export=view&id=1J00wkqRBX7CsOqvMmHVCV3qU268tYmFr)
-![Sample Image Detection 2](https://drive.google.com/uc?export=view&id=1JTP-ew8s-nYkWckVlZIcND9nCTWdeg88)
+![Sample Image Detection 2](https://drive.google.com/uc?export=view&id=13r3cdcXpsR1zAOZhmTlq-_AKWg3RieyR)
 
 
 ### Learning Curves
