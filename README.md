@@ -167,7 +167,7 @@ Follow these steps to set up the environment and install the necessary dependenc
 
 ### Traffic Density Analysis
 
-![Traffic Density Analysis](https://drive.google.com/uc?export=view&id=1qgbOkvyVfN8M8jRiwfoEl3DuM5xAsWd_)
+![Traffic Density Analysis](https://drive.google.com/file/d/1LFsVmTqou7GVN1SlJb50qMmFwWegwWnU/view?usp=sharing)
 
 ## Contributing
 
